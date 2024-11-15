@@ -1,0 +1,35 @@
+<div class="app-body-main-content">
+    <section class="service-section">
+
+        <h2>Service</h2>
+        <div class="service-section-header">
+            <div class="search-field">
+                <i class="ph-magnifying-glass"></i>
+                <input type="text" placeholder="Account number">
+            </div>
+            <button class="flat-button">
+                Search
+            </button>
+        </div>
+
+        <div class="mobile-only">
+            <button class="flat-button">
+                Toggle search
+            </button>
+        </div>
+
+        <div class="tiles">
+            <%- include('$10') %>
+
+
+
+        </div>
+        
+        <div class="service-section-footer">
+            <p>Services are paid according to the current state of the currency and tariff.</p>
+        </div>
+    </section>
+
+    <%- include('latest-transfer') %>
+
+</div>

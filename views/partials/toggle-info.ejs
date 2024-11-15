@@ -1,0 +1,38 @@
+<!-- Toggleable section on the right side -->
+<div id="exness-account" class="exness-toggle">
+
+    <div class="hold">
+        <img src="/images/exness.png" alt="exness" width="30%">
+    </div>
+
+    <p>READ THIS ! ! ! .</p> <br>
+    <p>Open your Exness account.</p>
+    <p>Dont have an account <a
+            href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiI1uiPp9qJAxWxkYMHHc3cKgIYABADGgJlZg&ae=2&aspm=1&co=1&ase=2&gclid=CjwKCAiAudG5BhAREiwAWMlSjH8iucn1JaN7FHwSTMcZDR9SgghWObJ0UGttl9xj_edZS_jK6BRp0BoCaFsQAvD_BwE&ei=NSE1Z8ydGInt7_UPoczo8Q4&ohost=www.google.com&cid=CAESVuD23c67k9zWPWDJ5-F9ifISfDHM5VXK4mJSJa9WDDpJZqVUtoZyrKinvDTDwcf9dureqx1i-zR_N7CYtdgGQsh1Yldo2h4GprZe7LdUL6poPISEjM2S&sig=AOD64_2ec5pq28vqIFXAoVSxlw762LlT-Q&q&sqi=2&nis=4&adurl&ved=2ahUKEwiMjOSPp9qJAxWJ9rsIHSEmOu4Q0Qx6BAgNEAE">
+            Register</a>.</p>
+    <p>Click on Deposit in your Exness Account.</p>
+    <p>And open a real account if you don’t have one yet.</p>
+    <p>Deposit exact Money of prop as selected, in your Exness.</p>
+    <p>Come back to the web.</p>
+    <p>Click on connect account.</p>
+    <p>After the login, your account will be connected.</p>
+    <p>Then within 24 hours you will receive your prop Money in your Exness Account.</p>
+    <br><br>
+    <p>Connect your Exness account to proceed.</p>
+    <br>
+    <button onclick="connectExness()"><a href="/exness">Connect Account</a></button>
+    <button onclick="toggleExnessAccount()">Close</button>
+</div>
+
+<script>
+    function toggleExnessAccount() {
+        const exnessDiv = document.getElementById('exness-account');
+        // Toggle visibility of the right-hand side div
+        exnessDiv.style.display = exnessDiv.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function handlePaymentClick() {
+        toggleExnessAccount();
+    }
+
+</script>

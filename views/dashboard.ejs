@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prop x</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="/css/dashoard.css">
+    <link rel="stylesheet" href="/css/$.css">
+
+</head>
+
+<body>
+
+
+    <div class="app">
+
+        <!-- Include Header -->
+        <%- include('partials/header') %>
+
+
+            <div class="app-body">
+
+                <!-- Include sidebar -->
+                <%- include('partials/sidebar') %>
+
+
+                    <!-- Include main content -->
+                    <%- include('partials/main-content') %>
+
+
+                        <!-- Include new payments -->
+                        <%- include('partials/new-payments') %>
+            </div>
+    </div>
+
+
+
+
+    <script src='https://unpkg.com/phosphor-icons'></script>
+    <script src="https://kit.fontawesome.com/b3fa93e021.js" crossorigin="anonymous"></script>
+    <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

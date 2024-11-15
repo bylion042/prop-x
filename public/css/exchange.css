@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #111;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-6, .card-5, .card-4, .card-3, .card-2, .card-1 {
+    position: absolute;
+    width: calc(300px - 30px);
+    height: 200px;
+    background-color: #242224;
+    border-radius: 10px;
+  }
+  
+  .slide {
+    width: calc(300px - 30px);
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+
+  .container {
+    height: 100vh;
+  }
+  
+  .card-1 {
+    top: 10px;
+    left: -200px;
+    transform: rotate(-20deg);
+  }
+  
+  .card-2 {
+    top: calc(calc(300px - 30px) - 20px);
+    left: -120px;
+    transform: rotate(-20deg);
+  }
+  
+  .card-3 {
+    top: calc(calc(300px - 30px) * 2 - 50px);
+    left: -35px;
+    transform: rotate(-20deg);
+  }
+  
+  .card-4 {
+    bottom: 10px;
+    right: -200px;
+    transform: rotate(-20deg);
+  }
+  
+  .card-5 {
+    bottom: calc(calc(300px - 30px) - 20px);
+    right: -120px;
+    transform: rotate(-20deg);
+  }
+  
+  .card-6 {
+    bottom: calc(calc(300px - 30px) * 2 - 50px);
+    right: -35px;
+    transform: rotate(-20deg);
+    overflow: hidden;
+  }
+  
+  .card-stack {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 550px;
+    background-color: #242224;
+    border-radius: 20px;
+    transform: rotate(-20deg);
+  }
+  .card-stack .balance {
+    position: absolute;
+    width: 100%;
+    margin-top: 230px;
+    margin-left: 40px;
+    font-size: 11px;
+    color: #fff;
+  }
+  .card-stack .balance span {
+    font-size: 18px;
+  }
+  
+  .swiper-container {
+    display: flex;
+    width: calc(300px - 30px);
+    height: 200px;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  .slide {
+    position: absolute;
+    font-size: 18px;
+    padding: 20px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  .slide .bank-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+  .slide .bank-name span {
+    font-size: 10px;
+    color: grey;
+  }
+  .slide .bank-name img {
+    margin: -15px -10px 0 0;
+  }
+  .slide img {
+    margin: 10px 0;
+  }
+  .slide .card-number {
+    font-size: 15px;
+  }
+  .slide .personal-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .slide.slide-3 {
+    width: calc(calc(300px - 30px) - 30px);
+    margin-top: -30px;
+    background: #486fe9;
+    z-index: 1;
+    color: #fff;
+  }
+  .slide.slide-3 span {
+    color: #fff;
+    opacity: 0.5;
+  }
+  .slide.slide-2 {
+    width: calc(calc(300px - 30px) - 15px);
+    background-color: #fff;
+    z-index: 2;
+  }
+  .slide.slide-1 {
+    margin-top: -320px;
+    z-index: 3;
+    color: #fff;
+    background-color: #111;
+  }
+  
