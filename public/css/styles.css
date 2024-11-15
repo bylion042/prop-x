@@ -29,26 +29,27 @@ body {
     align-items: center;
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
-    margin-top: 6rem;
-    color: var(--c-text-primary);
-    background: var(--c-gray-900);
     width: 100%;
     height: 100%;
+    background: url(/uoloads/bg.png) no-repeat center center fixed;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
 }
 
 .form-container {
     width: 50%;
-    padding: 2rem 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 2rem 30px;
+    /* text-align: center; */
     background: var(--c-gray-600);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--c-gray-500);
+    /* border-radius: 10px; */
 }
 
 h2 {
     color: var(--c-gray-100);
     margin-bottom: 1rem;
+    font-size: x-large;
 }
 
 form {
@@ -61,9 +62,11 @@ input[type="text"],
 input[type="email"],
 input[type="password"] {
     padding: 0.8rem;
-    border: 1px solid var(--c-gray-100);
+    /* border: 1px solid var(--c-gray-100); */
     background: none;
-    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid var(--c-gray-500);
+    /* border-radius: 4px; */
     font-size: 1rem;
     outline: none;
     color: var(--c-gray-100);
@@ -74,18 +77,21 @@ button {
     font-size: 1rem;
     color: #fff;
     border: none;
-    background: none;
+    background: var(--c-gray-800);
     /* background: var(--c-gray-600); */
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 1px solid var(--c-gray-100);
+    /* border: 1px solid var(--c-gray-100); */
 }
 
 
 p {
     margin-top: 1rem;
     color: var(--c-gray-100);
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -105,8 +111,27 @@ a:hover {
 
 @media (max-width: 800px) {
 
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f9;
+        font-family: Arial, sans-serif;
+        width: 100%;
+        background: url(/uoloads/bj.png) no-repeat center center fixed;
+        backdrop-filter: blur(2px);
+        background-size: cover;
+        height: 100vh;
+        /* margin: 0; */
+    }
+
     .form-container {
         width: 95%;
+    padding: 2rem 10px;
+    border: 1px solid var(--c-gray-900);
+    
+
     }
 
 
