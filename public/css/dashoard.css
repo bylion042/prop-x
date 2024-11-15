@@ -948,7 +948,7 @@ article{
   }
 
   .filter-options{
-    position: sticky;
+    display: none;
   }
 
   .transfer {
