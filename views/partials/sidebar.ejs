@@ -1,33 +1,90 @@
-<div class="app-body-navigation">
-    <nav class="navigation">
-        <a href="/dashboard">
+<!-- Sidebar -->
+<!-- SIDE BAR FOR LARGE SCREEN  -->
+<div class="contain-hamburger">
+    <div class="logo">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+    </div>
+    
+     <div class="hamburger" id="hamburger-menu">
+        <i class="fa-solid fa-bars" id="open-menu"></i>
+        <i class="fa-solid fa-x" id="close-menu" style="display: none;"></i>
+    </div>
+</div>
+
+
+<div class="menu-container" id="menu-container">
+    <div class="menu">
+        <a href="/dashboard" class="on active">
             <i class="fa-solid fa-house"></i>
             <span>Dashboard</span>
         </a>
-        <a href="#">
+        <a href="#" class="on">
             <i class="fa-solid fa-comments-dollar"></i>
             <span>Transfers</span>
         </a>
-        <a href="/exchange">
+        <a href="/exchange" class="on">
             <i class="fa-solid fa-rotate"></i>
             <span>Exchange</span>
         </a>
-        <a href="#">
+        <a href="#" class="on"> 
             <i class="fa-solid fa-circle-info"></i>
             <span>How to use</span>
         </a>
-        <a href="/login">
+        <a href="/login" class="on">
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
             <span>Logout</span>
         </a>
-    </nav>
+    </div>
 
-    
-    <footer class="footer">
-        <h1>Prop X<small>©</small></h1>
-        <div>
-            Prop X ©<br />
-            All Rights Reserved 2021
+    <footer>
+        <div class="footer-copyright">
+            &copy; 2021 Your prop x . All rights reserved.
         </div>
     </footer>
+</div>
+
+
+
+
+<!-- SIDE BAR FOR LARGE SCREEN  -->
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+    <div class="logo">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+    </div>
+
+    <div class="menu">
+        <a href="/dashboard" class="on active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+        <a href="#" class="on">
+            <i class="fa-solid fa-comments-dollar"></i>
+            <span>Transfers</span>
+        </a>
+        <a href="/exchange" class="on">
+            <i class="fa-solid fa-rotate"></i>
+            <span>Exchange</span>
+        </a>
+        <a href="#" class="on">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>How to use</span>
+        </a>
+        <a href="/login" class="on">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-copyright">
+            &copy; 2021 Your prop x . All rights reserved.
+        </div>
+    </footer>
+</aside>
+
+
+<!-- Arrow to toggle sidebar -->
+<div class="toggle-sidebar" id="toggle-btn">
+    <i class="fa-solid fa-angle-left"></i>
 </div>

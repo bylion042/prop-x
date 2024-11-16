@@ -1,0 +1,109 @@
+<section class="hold1">
+    <div class="hold-header" onclick="toggleDetails(this)">
+        <h3>
+            <p>New to Prop X</p>
+            <i class="fa-solid fa-gift"></i>
+        </h3>
+        <button>claim $10 <i class="fa-solid fa-star"></i></button>
+    </div>
+    <p>Thank you for choosing prop-x</p>
+    <div class="details" style="display: none;">
+        Welcome to Prop X! Enjoy your $10 bonus for joining. 
+    </div>
+</section>
+
+
+
+
+
+
+<section class="hold1">
+    <div class="hold-header" onclick="toggleDetails(this)">
+        <h3>
+            <p>I trade with EX</p>
+            <i class="fa-solid fa-gift"></i>
+        </h3>
+        <button>claim $5 <i class="fa-solid fa-star"></i></button>
+    </div>
+    <p>Thank you for choosing prop-x</p>
+    <div class="details" style="display: none;">
+        Trading with Exness? Claim your $5 bonus today!
+    </div>
+</section>
+
+
+
+
+
+<section class="hold1">
+    <div class="hold-header" onclick="toggleDetails(this)">
+        <h3>
+            <p>Have up to $50</p>
+            <i class="fa-solid fa-gift"></i>
+        </h3>
+        <button>claim $5 <i class="fa-solid fa-star"></i></button>
+    </div>
+    <p>Thank you for choosing prop-x</p>
+    <div class="details" style="display: none;">
+        Congratulations! Get your $5 bonus for having $50.
+    </div>
+</section>
+
+
+
+
+
+
+<section class="hold1">
+    <div class="hold-header" onclick="toggleDetails(this)">
+        <h3>
+            <p>Have up to $200</p>
+            <i class="fa-solid fa-gift"></i>
+        </h3>
+        <button>claim $25 <i class="fa-solid fa-star"></i></button>
+    </div>
+    <p>Thank you for choosing prop-x</p>
+    <div class="details" style="display: none;">
+        You're eligible for a $25 bonus for having $200. Claim it now!
+    </div>
+</section>
+
+
+
+<div id="toggle-box" class="toggle-box">
+    <h4 id="toggle-title">Title</h4>
+    <p id="toggle-content">Content goes here...</p> <br> <br>
+    <p>Connect your Exness account to claim.</p> <br>
+    <button onclick="connectExness()"><a href="/exness">Connect Account <i class="fa-solid fa-link"></i></a></button>
+    <button onclick="closeDetails()">Close </button>
+</div>
+
+
+
+
+<script>
+    function toggleDetails(element) {
+    const toggleBox = document.getElementById("toggle-box");
+    const toggleTitle = document.getElementById("toggle-title");
+    const toggleContent = document.getElementById("toggle-content");
+
+    // Retrieve the details from the clicked section
+    const title = element.querySelector("p").textContent;
+    const content = element.nextElementSibling.nextElementSibling.textContent;
+
+    // Update content in the toggle box
+    toggleTitle.textContent = title;
+    toggleContent.textContent = content;
+
+    // Slide in the toggle box
+    toggleBox.style.right = "0";
+}
+
+function closeDetails() {
+    const toggleBox = document.getElementById("toggle-box");
+
+    // Slide out the toggle box
+    toggleBox.style.right = "-300px";
+}
+
+</script>

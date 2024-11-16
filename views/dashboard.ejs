@@ -5,43 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prop x</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="/css/dashoard.css">
+    <link rel="icon" href="/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/$.css">
-
+    <link rel="stylesheet" href="/css/free-offer.css">
 </head>
 
 <body>
 
-
-    <div class="app">
-
-        <!-- Include Header -->
-        <%- include('partials/header') %>
+    <div class="container">
+        <!-- sidebar -->
+        <%- include ('partials/sidebar.ejs') %>
 
 
-            <div class="app-body">
 
-                <!-- Include sidebar -->
-                <%- include('partials/sidebar') %>
+            <!-- Main content -->
+            <main class="main-content">
+                <header class="header">
+                    <div class="profile-summary">
+                        <img src="/images/dp.png" alt="Profile" class="profile-pic">
+                        <div>
+                            <h2>
+                                <%= user.username %>
+                            </h2>
+                            <p>
+                                <%= user.email %>
+                            </p>
+                        </div>
+                    </div>
+                </header>
 
 
-                    <!-- Include main content -->
-                    <%- include('partials/main-content') %>
+
+                <!-- SPECIAL OFFERS FOR YOU  -->
+                <%- include('partials/special-offer') %>
 
 
-                        <!-- Include new payments -->
-                        <%- include('partials/new-payments') %>
-            </div>
+
+
+
+
+                <!-- OFFERS  -->
+                <!-- Include main content -->
+                <%- include('partials/main-content') %>
+
+
+
+
+                <!-- ALL ABOUT MY FOOTER  -->
+                 <h2 class="my-footer">Footer</h2>
+                <div class="site-end">
+                    <div class="site-end-container">
+                        <!-- Logo Section -->
+                        <div class="site-logo">
+                            <img src="/images/fav.png" alt="Logo">
+                            <p>© 2021 YourCompany. All rights reserved.</p>
+                        </div>
+                
+                        <!-- Navigation Links -->
+                        <div class="site-nav">
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#privacy">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                
+                        <!-- Social Media Links -->
+                        <div class="site-social">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+            </main>
+
     </div>
 
 
-
-
-    <script src='https://unpkg.com/phosphor-icons'></script>
     <script src="https://kit.fontawesome.com/b3fa93e021.js" crossorigin="anonymous"></script>
     <script src="/js/dashboard.js"></script>
-
 </body>
 
 </html>
