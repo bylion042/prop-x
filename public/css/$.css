@@ -118,6 +118,7 @@ em p{
         z-index: 1000; /* Ensure it appears above other content */
         padding: 20px; /* Optional: adjust padding for content */
         overflow: hidden; /* Prevent any scrolling inside the div */
+        border: none;
     }
     
     .exness-toggle p {
